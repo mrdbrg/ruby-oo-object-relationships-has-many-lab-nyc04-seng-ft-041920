@@ -1,57 +1,83 @@
 require "pry"
 require_relative "artist.rb"
 require_relative "song.rb"
+require_relative "author.rb"
+require_relative "post.rb"
 
-theWeeknd = Artist.new("TheWeeknd")
-starboy = Song.new("Starboy")
-starboy.artist = theWeeknd
-# p starboy.artist.name
+betty = Author.new("Betty") 
+betty.name
+# "Betty"
 
-adele = Artist.new("Adele")
-hello = Song.new("Hello")
-hello.artist = adele
-# p hello.artist
-puts "======="
-p adele.songs
-puts "======="
-# [hello]
+betty.posts
+post = Post.new("My Post")
+post.author = betty
+betty.posts
+# [post]
+
+binding.pry
+
+
+
+
+
+
+
+
+
+
+
 
 
 # theWeeknd = Artist.new("TheWeeknd")
-# jackJohnson = Artist.new("Jack Johnson")
-# # p theWeeknd.name
+# starboy = Song.new("Starboy")
+# starboy.artist = theWeeknd
+# # p starboy.artist.name
 
-# # "Too Late"
-# # "Blinded By The Lights"
+# adele = Artist.new("Adele")
+# hello = Song.new("Hello")
+# hello.artist = adele
+# # p hello.artist
+# puts "======="
+# p adele.songs
+# puts "======="
+# # [hello]
 
-# heartless = Song.new("Heartless", "Alternative R&B")
-# snowchild = Song.new("Snowchild", "Alternative R&B")
 
-# heartless.artist = theWeeknd
-# p heartless.title
-# p heartless.genre
-# p heartless.artist_name
+# # theWeeknd = Artist.new("TheWeeknd")
+# # jackJohnson = Artist.new("Jack Johnson")
+# # # p theWeeknd.name
 
-# puts "======================"
-# puts "======================"
+# # # "Too Late"
+# # # "Blinded By The Lights"
 
-# snowchild.artist = theWeeknd
-# p snowchild.title
-# p snowchild.genre
-# p snowchild.artist_name
+# # heartless = Song.new("Heartless", "Alternative R&B")
+# # snowchild = Song.new("Snowchild", "Alternative R&B")
 
-# puts "======================"
-# puts "======================"
+# # heartless.artist = theWeeknd
+# # p heartless.title
+# # p heartless.genre
+# # p heartless.artist_name
 
-# jackJohnson.create_song_by_name("Better Together", "surf music")
-# jackJohnson.create_song_by_name("I got you", "surf music")
-# jackJohnson.create_song_by_name("Never Fade", "surf music")
+# # puts "======================"
+# # puts "======================"
 
-# p jackJohnson.artist_songs
+# # snowchild.artist = theWeeknd
+# # p snowchild.title
+# # p snowchild.genre
+# # p snowchild.artist_name
 
-# puts "**********************"
-# puts "**********************"
+# # puts "======================"
+# # puts "======================"
 
-# p Song.all
+# # jackJohnson.create_song_by_name("Better Together", "surf music")
+# # jackJohnson.create_song_by_name("I got you", "surf music")
+# # jackJohnson.create_song_by_name("Never Fade", "surf music")
 
-# # binding.pry
+# # p jackJohnson.artist_songs
+
+# # puts "**********************"
+# # puts "**********************"
+
+# # p Song.all
+
+# # # binding.pry

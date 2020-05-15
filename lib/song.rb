@@ -1,11 +1,4 @@
-require "pry"
-# Build a Artist class
-# Attributes: title, genre
-# Collect all the songs in an array
-# Display the name of the artist of a particular song
-
 class Song
-
   attr_accessor :artist, :name
   @@all = []
 

@@ -1,12 +1,5 @@
-# Build a Artist class
-# Attributes: name
-# Add songs from Artist class - Single soure of truth concept
-# Display all of the songs by the artist
-
 class Artist
-
   attr_accessor :name
-
 
   def initialize(name)
     @name = name
